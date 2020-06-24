@@ -5,4 +5,4 @@ nc = {}
 for i in data:
     if i not in nc: nc[i] = data.count(i)
 list_nc = list(nc.items())
-print(sorted(list_nc, key=itemgetter(1, 0), reverse=True))
+print(*(sorted(list_nc, key=itemgetter(1, 0), reverse=True)), sep=', ')
